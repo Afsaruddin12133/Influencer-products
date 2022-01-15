@@ -288,11 +288,13 @@ footer{
   ul>li{
     margin-right: 10px;
   }
-  .containar-second-child img{
-    margin-top: 180px;
+  .product-cards-section{
+      margin-top: 200px;
   }
   .containar{
-    grid-column-gap: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+    /* grid-column-gap: 40px; */
   }
   /* product-card-section */
   .product-cards{
