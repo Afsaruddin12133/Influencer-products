@@ -13,11 +13,13 @@ body{
 }
 header {
     height: 100vh;
-    overflow: hidden;
     padding: 0px 9%;
 }
 .primary-color{
     color: #E02C6D;
+}
+#button{
+    display: none;
 }
 /*------------------ start-navbar-section---------------- */
 .navbar-section {
@@ -206,4 +208,95 @@ footer{
 .space{
     padding-left: 10px;
     cursor: pointer;
+}
+/*------------------------ Media quary for mobile---------------------- */
+@media only screen and (max-width:500px) {
+    header{
+        padding: 0px 5px;
+    }
+    /* heading section */
+    .navbar-section{
+        width: 100%;
+    }
+    .logo-image img{
+        width: 150px;
+    }
+    .menuvar{
+        display: none;
+    }
+    #button{
+        font-size: 40px;
+        margin-left: 70px;
+        background-color: #E02C6D;
+        color: white;
+        display: block;
+    }
+    .containar{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .containar-first-child {
+        margin: 0px;
+        width: 100%;
+    }
+    .containar-second-child img{
+        min-width: none;
+        width: 100%;
+        margin-top: 50px!important;
+    }
+    /* product card section */
+    .product-cards{
+        grid-template-columns: 1fr !important;
+        margin-top: 40px;
+    }
+    .product-cards-section{
+        padding: 0px 0%;
+    }
+    #size{
+        text-align: center; 
+        padding-bottom: 10px;
+         font-size: 28px;
+         margin-top: 280px;
+    }
+    /* last-containar-section */
+    .last-containar{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .containar-image img{
+        width: 100%;
+    }
+}
+/*------------------------ Media quary for ipad---------------------- */
+@media only screen and (max-width:960px){
+   body{
+       width: 100%;
+   }
+   /* heading section */
+   header{
+    padding: 0px 20px;
+     /* height: 70vh; */
+  }
+   .navbar-section{
+    width: 100%;
+  }
+  ul>li{
+    margin-right: 10px;
+  }
+  .containar-second-child img{
+    margin-top: 180px;
+  }
+  .containar{
+    grid-column-gap: 40px;
+  }
+  /* product-card-section */
+  .product-cards{
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+} 
 }
